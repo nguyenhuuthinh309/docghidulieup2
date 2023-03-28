@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-info">
+  <div class="row">
+    <div class="col-sm-8 ofset-sm-2" style="background-color: #FFFFF; margin-top 50px: padding:20px" >
+
+
+<a href="/" class="btn btn-primary ">ADD tài khoản</a>
+<table class=" table table-bordered">
+    <tr>
+        <th>NAME</th>
+        <th>PASS</th>
+    </tr>
+    
+    {{#each taikhoan}}
+     <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.password}}</td>
+      
+        <td><a href="/del/{{this._id}}" class="btn btn-primary btn-sm"
+        onclick="return confirm("xóa?")">DEL</a>
+        <a href="/edit/{{this._id}}" class="btn btn-primary btn-sm">Edit</a></td>
+    </tr>
+    {{/each}}
+
+    </div>
+  </div>
+  
+</body>
+</html>

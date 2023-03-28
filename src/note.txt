@@ -1,0 +1,13 @@
+thinh309
+
+thinhthinhthinh
+
+mongodb+srv://thinh309:<thinhthinhthinh>@cluster0.adfcye6.mongodb.net/taikhoan?retryWrites=true&w=majority
+
+
+
+
+
+npm init
+npm i --save-dev nodemon
+nnpm i express --save 
